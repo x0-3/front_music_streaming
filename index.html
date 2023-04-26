@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adba52364d.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <figure>
+            <a href="#">
+
+                <img src="img/2.png" alt="logo">
+            </a>
+        </figure>
+
+        <input type='checkbox' id='toggle' style='display:none;' />
+        <label class='toggle-btn toggle-btn__cross' for='toggle'>
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newRelease.html">New Release</a></li>
+                <li><a href="playlist.html">My Playlists</a></li>
+                <li><a href="playlistDetail.html">Liked Songs</a></li>
+                <li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+            </ul>
+        </nav>
+
+        <figure class="avatar">
+            <img src="img/2.png" alt="avatar">
+
+            <div class="dropdown-content">
+
+                <div class="setting">
+
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings
+                    </a>
+                </div>
+
+                <div class="logout">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Log out
+                    </a>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox" class="input" id="theme" onclick="myFunction()">
+                    <span class="slider"></span>
+                </label>
+
+
+            </div>
+        </figure>
+    </header>
+
+    <!--
+    <aside>
+        <figure>
+            <img src="img/2.png" alt="subscribedTo">
+            <img src="img/2.png" alt="subscribedTo">
+            <img src="img/2.png" alt="subscribedTo">
+            <img src="img/2.png" alt="subscribedTo">
+            <img src="img/2.png" alt="subscribedTo">
+            <img src="img/2.png" alt="subscribedTo">
+        </figure>
+
+        <a href="#" class="fa-solid fa-arrow-right"></a>
+
+    </aside>
+    -->
+
+    <main>
+
+        <section class="home">
+
+            <div class="playlist">
+
+                <div class="title">
+
+                    <h1>Recommended</h1>
+                    <a href="#">More</a>
+                </div>
+
+                <div class="playlistCards">
+
+                    <div class="playlistCard">
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+                    </div>
+
+                    <div class="playlistCard">
+                        
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+
+                            <h3>Playlist Name</h3>
+                        </a>
+
+                    </div>
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+
+                            <h3>Playlist Name</h3>
+
+                        </a>
+
+                    </div>
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+
+                            <h3>Playlist Name</h3>
+
+                        </a>
+                    </div>
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+
+                            <h3>Playlist Name</h3>
+
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="playlist">
+
+                <div class="title">
+
+                    <h1>Your Playlists</h1>
+                    <a href="#">More</a>
+                </div>
+
+                <div class="playlistCards">
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+
+                            <h3>Playlist Name</h3>
+
+                        </a>
+                    </div>
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+
+                    </div>
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+                    </div>
+                    
+                    <div class="playlistCard">
+
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+
+                    </div>
+
+                    <div class="playlistCard">
+                        
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="playlist">
+
+                <div class="title">
+
+                    <h1>Discover a new genre</h1>
+                    <a href="#">More</a>
+                </div>
+
+                <div class="playlistCards">
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+
+                    </div>
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+
+                    </div>
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+                    </div>
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+                    </div>
+
+                    <div class="playlistCard">
+
+                        <a href="#">
+
+                            <figure>
+                                <img src="img/1.png" alt="playlist image">
+                            </figure>
+                            
+                            <h3>Playlist Name</h3>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="legal">
+            <ul>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Cookie</a></li>
+                <li><a href="#">Copyright</a></li>
+            </ul>
+        </div>
+
+        <small>StreamVibe</small>
+    </footer>
+
+</body>
+
+</html>

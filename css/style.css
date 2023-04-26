@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* h1, * h3 {
+  font-family: "Montserrat", sans-serif;
+}
+* h3 {
+  font-size: medium;
+}
+* h3:hover {
+  color: #36454F;
+}
+* h1 {
+  font-size: larger;
+  color: #36454F;
+}
+* p {
+  font-family: "Lato", sans-serif;
+}
+* body header {
+  background-color: #36454F;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 2px 10px 5px rgba(3, 3, 3, 0.1);
+}
+* body header figure {
+  width: 5%;
+}
+* body header figure img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+* body header .fa-bars {
+  display: none;
+}
+* body header nav {
+  width: 81%;
+}
+* body header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+* body header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 40px;
+  font-family: "Playfair Display", serif;
+}
+* body header nav ul li a:hover {
+  color: #7DF9FF;
+}
+* body header .avatar {
+  width: 3%;
+  float: right;
+  overflow: hidden;
+}
+* body header .avatar img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+* body header .avatar .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 23px;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+* body header .avatar:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  width: 7%;
+  border-radius: 10px;
+  min-height: 129px;
+  justify-content: space-around;
+  padding: 0 19px;
+}
+* body header .avatar:hover .dropdown-content a {
+  color: black;
+  text-decoration: none;
+}
+* body header .avatar:hover .dropdown-content .switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 64%;
+}
+* body header .avatar:hover .dropdown-content .switch input {
+  opacity: 0;
+}
+* body header .avatar:hover .dropdown-content .switch input:focus + .slider {
+  box-shadow: 0 0 1px #183153;
+}
+* body header .avatar:hover .dropdown-content .switch input:checked + .slider::before {
+  transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  -moz-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  -o-transform: translateX(30px);
+}
+* body header .avatar:hover .dropdown-content .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73C0FC;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+* body header .avatar:hover .dropdown-content .switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 32%;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: 0.4s;
+}
+* body .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 65px 67px 41px 76px;
+}
+* body .title a {
+  text-decoration: none;
+  padding: 7px 22px;
+  border-radius: 10px;
+  color: white;
+  background-color: #36454F;
+}
+* body .title a:hover {
+  background-color: #183153;
+}
+* body .card {
+  width: 14%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+* body .card a {
+  text-decoration: none;
+  color: black;
+}
+* body .card a:hover {
+  color: #36454F;
+}
+* body .card a figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+* body .card a h3, * body .card a p {
+  margin: 12px 0 5px 9px;
+}
+* body section.home {
+  display: flex;
+  flex-direction: column;
+}
+* body section.home .playlistCards {
+  display: flex;
+  justify-content: space-evenly;
+}
+* body section.home .playlistCards .playlistCard {
+  width: 18%;
+}
+* body section.home .playlistCards .playlistCard a {
+  text-decoration: none;
+  color: black;
+}
+* body section.home .playlistCards .playlistCard a figure {
+  width: 85%;
+}
+* body section.home .playlistCards .playlistCard a figure img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(3, 3, 3, 0.1);
+}
+* body section.newRelease .newAlbum .cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+* body section.newRelease .genres .genresList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 94%;
+  margin: auto;
+}
+* body section.newRelease .genres .genresList a {
+  text-decoration: none;
+  background-color: #3164F4;
+  color: white;
+  padding: 11px 30px;
+  border-radius: 10px;
+  margin: 0px 19px 27px;
+}
+* body section.playlistList .title .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 17%;
+}
+* body section.playlistList .title .nav .artistLink {
+  color: black;
+  background: none;
+  padding: 0;
+}
+* body section.playlistList .myPlaylist {
+  display: flex;
+  width: 97%;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: auto;
+}
+* body section.playlistList .myPlaylist .mainCard {
+  width: 46%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  margin: 0 60px 40px 0;
+}
+* body section.playlistList .myPlaylist .mainCard a {
+  color: #36454F;
+}
+* body section.playlistList .myPlaylist .mainCard a figure {
+  height: 41vh;
+}
+* body section.playlistList .myPlaylist .mainCard a figure img {
+  position: relative;
+  width: 100%;
+}
+* body section.playlistList .myPlaylist .mainCard a figure figcaption {
+  position: absolute;
+  top: 67%;
+  left: 2%;
+}
+* body section.playlistList .myPlaylist .card {
+  margin: 0 58px 40px 0;
+  width: 12%;
+}
+* body section.listArtist .artistCard {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  min-height: 21vh;
+  width: 98%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 28px;
+}
+* body section.listArtist .artistCard figure {
+  width: 7%;
+  margin: 13px;
+}
+* body section.listArtist .artistCard figure img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+* body section.listArtist .artistCard a {
+  text-decoration: none;
+  color: #030303;
+  font-family: "Montserrat", sans-serif;
+}
+* body footer {
+  margin-top: 50px;
+}
+* body footer .legal ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+* body footer .legal ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Playfair Display", serif;
+}
+* body footer small {
+  margin: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.dark {
+  background-color: #36454F;
+}/*# sourceMappingURL=style.css.map */
