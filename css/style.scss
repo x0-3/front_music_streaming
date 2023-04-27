@@ -607,7 +607,19 @@
 
             .player{
                 margin-left: 21px;
+                width: 69%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
+                figure{
+                    width: 77%;
+                    margin-bottom: 9px;
+
+                    img{
+                        width: 100%;
+                    }
+                }
 
                 .song-slider{
                     width: 100%;
@@ -620,7 +632,7 @@
                         width: 100%;
                         height: 5px;
                         border-radius: 10px;
-                        background: #7fc8a9;
+                        background: #C1C1C1;
                         overflow: hidden;
                         cursor: pointer;
 
@@ -628,7 +640,7 @@
                             appearance: none;
                             width: 1px;
                             height: 20px;
-                            box-shadow: -400px 0 0 400px #d5eebb;
+                            box-shadow: -400px 0 0 400px #737272;
                         }
                     }
 
@@ -636,12 +648,24 @@
                 }
 
                 .controls{
-                    width: 60%;
+                    width: 27%;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     align-items: center;
-                    margin: auto;
-                    margin-top: 20px;
+                    // margin: auto;
+                    margin: 20px auto;
+
+                    button{
+                        background: none;
+                        border: none;
+                        font-size: x-large;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: #36454F;
+
+                        }
+                    }
 
                     
 
