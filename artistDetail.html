@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>playlist</title>
+    <title>artistDetail</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
 
         <figure>
@@ -67,30 +66,95 @@
         </figure>
     </header>
 
-    <main>
-        <section class="playlistList">
+    <section class="artistDetail">
+
+        <div class="hero">
+            <figure>
+                <img src="img/2.png" alt="profile picture">
+
+                <figcaption>
+                    <h1>Artist Name</h1>
+                    <button>subscribe</button>
+                </figcaption>
+            </figure>
+        </div>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th></th>
+                    <th>title</th>
+                    <th>artist</th>
+                    <th></th>
+                    <th>time</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="img/2.png" alt="song img">
+                        </figure>
+                    </td>
+                    <td>song Title</td>
+                    <td> <a href="artistDetail.html"> Artist name </a></td>
+                    <td><button><i class="fa-regular fa-heart"></i></button></td>
+                    <td>3:09</td>
+                    <td><button><i class="fa-solid fa-plus"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="img/2.png" alt="song img">
+                        </figure>
+                    </td>
+                    <td>song Title</td>
+                    <td>Artist name</td>
+                    <td><button><i class="fa-regular fa-heart"></i></button></td>
+                    <td>3:09</td>
+                    <td><button><i class="fa-solid fa-plus"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="album">
 
             <div class="title">
-                <div class="nav">
 
-                    <h1>Playlist</h1>
-                    <a class="artistLink" href="artist.html">Artists</a>
-                </div>
-
-                <a href="#">New playlist</a>
+                <h1>Albums</h1>
+                <a href="#">More</a>
             </div>
 
-            <div class="myPlaylist">
+            <div class="cards">
 
-                <div class="mainCard">
+                <div class="card">
                     <a href="playlistDetail.html">
+
                         <figure>
-                            <img src="img/1.png" alt="playlist image">
-                            <figcaption>
-                                <h2>Name</h2>
-                                <h3>Number of Songs :</h3>
-                            </figcaption>
+                            <img src="img/2.png" alt="album cover">
                         </figure>
+                        
+                        <h3>Album Name</h3>
+                        <p>Artist</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+
+                        <figure>
+                            <img src="img/2.png" alt="album cover">
+                        </figure>
+                        
+                        <h3>Album Name</h3>
+                        <p>Artist</p>
                     </a>
                 </div>
 
@@ -99,11 +163,11 @@
                     <a href="#">
 
                         <figure>
-                            <img src="img/2.png" alt="playlist image">
+                            <img src="img/2.png" alt="album cover">
                         </figure>
-
-                        <h3>Name</h3>
-
+                        
+                        <h3>Album Name</h3>
+                        <p>Artist</p>
                     </a>
                 </div>
 
@@ -112,66 +176,76 @@
                     <a href="#">
 
                         <figure>
-                            <img src="img/2.png" alt="playlist image">
+                            <img src="img/2.png" alt="album cover">
                         </figure>
-
-                        <h3>Name</h3>
-
+                        
+                        <h3>Album Name</h3>
+                        <p>Artist</p>
                     </a>
                 </div>
-                <div class="card">
 
-                    <a href="#">
-
-                        <figure>
-                            <img src="img/2.png" alt="playlist image">
-                        </figure>
-
-                        <h3>Name</h3>
-
-                    </a>
-                </div>
-                <div class="card">
-
-                    <a href="#">
-
-                        <figure>
-                            <img src="img/2.png" alt="playlist image">
-                        </figure>
-
-                        <h3>Name</h3>
-
-                    </a>
-                </div>
-                <div class="card">
-
-                    <a href="#">
-
-                        <figure>
-                            <img src="img/2.png" alt="playlist image">
-                        </figure>
-
-                        <h3>Name</h3>
-
-                    </a>
-                </div>
-                <div class="card">
-
-                    <a href="#">
-
-                        <figure>
-                            <img src="img/2.png" alt="playlist image">
-                        </figure>
-
-                        <h3>Name</h3>
-
-                    </a>
-                </div>
-                
             </div>
-        </section>
-    </main>
-    
+        </div>
+
+        <div class="artist">
+
+            <div class="title">
+
+                <h1>Similare Artists</h1>
+                <a href="#">More</a>
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <a href="artistDetail.html">
+
+                        <figure>
+                            <img src="img/2.png" alt="album cover">
+                        </figure>
+                        
+                        <h3>Name</h3>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+
+                        <figure>
+                            <img src="img/2.png" alt="album cover">
+                        </figure>
+                        
+                        <h3>Name</h3>
+                    </a>
+                </div>
+
+                <div class="card">
+
+                    <a href="#">
+
+                        <figure>
+                            <img src="img/2.png" alt="album cover">
+                        </figure>
+                        
+                        <h3>Name</h3>
+                    </a>
+                </div>
+
+                <div class="card">
+
+                    <a href="#">
+
+                        <figure>
+                            <img src="img/2.png" alt="album cover">
+                        </figure>
+                        
+                        <h3>Name</h3>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
     <footer>
