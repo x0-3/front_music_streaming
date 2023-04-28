@@ -100,64 +100,59 @@
 
                 &:hover{
                     .dropdown-content{
-                        
                         display: flex;
                         flex-direction: column;
-                        width: 7%;
+                        width: 11%;
                         border-radius: 10px;
-                        min-height: 129px;
-                        justify-content: space-around;
-                        padding: 0 19px;
+                        padding: 26px 19px;
+                        font-size: large;
+
+                        .setting, .logout{
+                            margin-bottom: 10px;
+
+                        }
 
                         a{
                             color: black;
                             text-decoration: none;
+                            margin-left: 7px;
                         }
 
-                        .switch{
-                            font-size: 17px;
-                            position: relative;
-                            display: inline-block;
-                            width: 64%;
+                        button{
+                            border: none;
+                            border-radius: 15px;
+                            background-color: #36454F;
+                            padding: 10px;
+                            cursor: pointer;
+                            color: white;
+                        }
 
-                            input{
-                                opacity: 0;
+                        h3{
+                            margin-top: 15px;       
+                        }
+                        .recentSub{
 
-                                &:focus + .slider{
-                                    box-shadow: 0 0 1px #183153;
+                            margin: 10px 0;
+
+                            a{
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+
+                                figure{
+
+                                    width: 30%;
+                                    img{
+
+                                        width: 100%;
+                                    }
                                 }
 
-                                &:checked + .slider::before{
-                                    transform: translateX(30px);
-                                    -webkit-transform: translateX(30px);
-                                    -moz-transform: translateX(30px);
-                                    -ms-transform: translateX(30px);
-                                    -o-transform: translateX(30px);
-                                }
-                            }
+                                small{
 
-                            .slider{
-                                position: absolute;
-                                cursor: pointer;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                background-color: #73C0FC;
-                                transition: .4s;
-                                border-radius: 30px;
-
-                                &::before{
-                                    position: absolute;
-                                    content: "";
-                                    height: 16px;
-                                    width: 32%;
-                                    border-radius: 20px;
-                                    left: 2px;
-                                    bottom: 2px;
-                                    z-index: 2;
-                                    background-color: #e8e8e8;
-                                    transition: .4s;
+                                    font-size: medium;
+                                    margin-left: 7px;
                                 }
                             }
                         }
@@ -221,7 +216,6 @@
             .playlistCards{
                 display: flex;
                 justify-content: space-evenly;
-                // margin: 0 0 21px 57px;
 
                 .playlistCard{
                     width: 18%;
@@ -763,4 +757,60 @@
 
 .dark{
     background-color: #36454F;
+}
+
+$breakpointDesktop: 1024px;
+$breakpointTablet: 768px;
+$breakpointPhone: 767px;
+
+@media only screen and (min-width: $breakpointTablet) and (max-width: $breakpointDesktop) {
+    
+    body{
+
+        main{
+            min-height: 76vh;
+        }
+        
+        header{
+            nav{
+                ul{
+                    li{
+                        a{
+                            margin: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        section.home .playlistCards .playlistCard a figure{
+            width: 100%;
+        }
+
+        .card{
+            width: 21%;
+        }
+
+        section.musicPlayer {
+
+            table{
+                width: 100%;
+
+                tbody{
+                    tr{
+                        td{
+                            width: 17%;
+
+                        }
+                    } 
+                } 
+            }
+
+            .player{
+                height: 79vh;
+                justify-content: center;
+            }
+        }
+    }
+
 }
