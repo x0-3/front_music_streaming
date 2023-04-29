@@ -16,54 +16,67 @@
     <header>
 
         <figure>
-            <a href="#">
+            <a href="index.html">
 
                 <img src="img/2.png" alt="logo">
             </a>
         </figure>
 
-        <input type='checkbox' id='toggle' style='display:none;' />
-        <label class='toggle-btn toggle-btn__cross' for='toggle'>
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="newRelease.html">New Release</a></li>
-                <li><a href="playlist.html">My Playlists</a></li>
-                <li><a href="playlistDetail.html">Liked Songs</a></li>
-                <li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
-            </ul>
-        </nav>
+        <div class="mySidepanel" id="mySidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <nav>
+                <ul>
+                    <li><a class="menuItem" href="index.html">Home</a></li>
+                    <li><a class="menuItem" href="newRelease.html">New Release</a></li>
+                    <li><a class="menuItem" href="playlist.html">My Playlists</a></li>
+                    <li><a class="menuItem" href="playlistDetail.html">Liked Songs</a></li>
+                    <li><a class="menuItem" href="#" class="fa-solid fa-magnifying-glass"></a></li>
+                </ul>
+            </nav>
 
-        <figure class="avatar">
-            <img src="img/2.png" alt="avatar">
+            <figure class="avatar">
+                <img src="img/2.png" alt="avatar">
 
-            <div class="dropdown-content">
+                <div class="dropdown-content">
 
-                <div class="setting">
+                    <div class="setting">
 
-                    <a href="#">
-                        <i class="fa-solid fa-gear"></i>
-                        Settings
-                    </a>
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            Settings
+                        </a>
+                    </div>
+
+                    <div class="logout">
+                        <a href="login.html">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            Log out
+                        </a>
+                    </div>
+
+                    
+                    <button onclick="myFunction()">toggle mode</button>
+                    
+
+
+                    <h3>latest subscription :</h3>
+                    <div class="recentSub">
+                        <a href="artistDetail.html">
+                            <figure>
+                                <img src="img/2.png" alt="subscribedTo">
+
+                            </figure>
+
+                            <small>Artist Name</small>
+                        </a>
+                    </div>
                 </div>
+            </figure>
 
-                <div class="logout">
-                    <a href="#">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        Log out
-                    </a>
-                </div>
+        </div>
 
-                <label class="switch">
-                    <input type="checkbox" class="input" id="theme" onclick="myFunction()">
-                    <span class="slider"></span>
-                </label>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
 
-
-            </div>
-        </figure>
     </header>
 
     <main>
