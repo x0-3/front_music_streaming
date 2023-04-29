@@ -1,3 +1,4 @@
+// ******************************************* Toggle light and dark mode ********************************************************************* //
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark");
@@ -37,9 +38,8 @@ myAudio.onpause = function() {
 
 
 // previous next
-// Array with song titles
 
-// TODO:find a way to make it dynamique
+// TODO:find a way to make it dynamique 
 let playlist = [
   'Aaliyah - Giving You More.mp3',
   'Aaliyah - Giving You More.mp3',

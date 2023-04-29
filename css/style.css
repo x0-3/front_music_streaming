@@ -728,4 +728,11 @@
   body section.musicPlayer .comments article p {
     margin-left: 37px;
   }
+  body footer {
+    display: flex;
+    flex-direction: column;
+  }
+  body footer small {
+    margin: 15px auto;
+  }
 }/*# sourceMappingURL=style.css.map */

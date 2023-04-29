@@ -864,7 +864,6 @@ $breakpointPhone: 767px;
 
 }
 
-// TODO: finish mobile responsive
 @media only screen and (max-width: $breakpointPhone) {
     
     body{
@@ -1071,5 +1070,13 @@ $breakpointPhone: 767px;
 
         }
 
+        footer {
+            display: flex;
+            flex-direction: column;
+
+            small{
+                margin: 15px auto;
+            }
+        }
     }
 }
