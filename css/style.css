@@ -37,47 +37,52 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-* body header .fa-bars {
+* body header .closebtn, * body header .openbtn {
   display: none;
 }
-* body header nav {
+* body header .mySidepanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* body header .mySidepanel nav {
   width: 81%;
 }
-* body header nav ul {
+* body header .mySidepanel nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
-* body header nav ul li a {
+* body header .mySidepanel nav ul li a {
   color: white;
   text-decoration: none;
   margin: 40px;
   font-family: "Playfair Display", serif;
 }
-* body header nav ul li a:hover {
+* body header .mySidepanel nav ul li a:hover {
   color: #7DF9FF;
 }
-* body header .avatar {
+* body header .mySidepanel .avatar {
   width: 3%;
   float: right;
   overflow: hidden;
 }
-* body header .avatar img {
+* body header .mySidepanel .avatar img {
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
-* body header .avatar .dropdown-content {
+* body header .mySidepanel .avatar .dropdown-content {
   display: none;
   position: absolute;
   right: 23px;
   background-color: #f9f9f9;
   z-index: 1;
 }
-* body header .avatar:hover .dropdown-content {
+* body header .mySidepanel .avatar:hover .dropdown-content {
   display: flex;
   flex-direction: column;
   width: 11%;
@@ -85,15 +90,15 @@
   padding: 26px 19px;
   font-size: large;
 }
-* body header .avatar:hover .dropdown-content .setting, * body header .avatar:hover .dropdown-content .logout {
+* body header .mySidepanel .avatar:hover .dropdown-content .setting, * body header .mySidepanel .avatar:hover .dropdown-content .logout {
   margin-bottom: 10px;
 }
-* body header .avatar:hover .dropdown-content a {
+* body header .mySidepanel .avatar:hover .dropdown-content a {
   color: black;
   text-decoration: none;
   margin-left: 7px;
 }
-* body header .avatar:hover .dropdown-content button {
+* body header .mySidepanel .avatar:hover .dropdown-content button {
   border: none;
   border-radius: 15px;
   background-color: #36454F;
@@ -101,24 +106,24 @@
   cursor: pointer;
   color: white;
 }
-* body header .avatar:hover .dropdown-content h3 {
+* body header .mySidepanel .avatar:hover .dropdown-content h3 {
   margin-top: 15px;
 }
-* body header .avatar:hover .dropdown-content .recentSub {
+* body header .mySidepanel .avatar:hover .dropdown-content .recentSub {
   margin: 10px 0;
 }
-* body header .avatar:hover .dropdown-content .recentSub a {
+* body header .mySidepanel .avatar:hover .dropdown-content .recentSub a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-* body header .avatar:hover .dropdown-content .recentSub a figure {
+* body header .mySidepanel .avatar:hover .dropdown-content .recentSub a figure {
   width: 30%;
 }
-* body header .avatar:hover .dropdown-content .recentSub a figure img {
+* body header .mySidepanel .avatar:hover .dropdown-content .recentSub a figure img {
   width: 100%;
 }
-* body header .avatar:hover .dropdown-content .recentSub a small {
+* body header .mySidepanel .avatar:hover .dropdown-content .recentSub a small {
   font-size: medium;
   margin-left: 7px;
 }
@@ -555,8 +560,8 @@
   body main {
     min-height: 76vh;
   }
-  body header nav ul li a {
-    margin: 30px;
+  body header .mySidepanel nav ul li a {
+    margin: 15px;
   }
   body header .avatar:hover .dropdown-content {
     width: 30%;
@@ -589,5 +594,69 @@
   }
   body section.musicPlayer table tbody tr td {
     width: 17%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body header {
+    justify-content: space-between;
+  }
+  body header figure {
+    width: 13%;
+    margin-left: 8px;
+  }
+  body header .mySidepanel {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  body header .mySidepanel nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body header .mySidepanel nav ul li a {
+    margin: 5px;
+  }
+  body header .mySidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  body header .mySidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: red;
+  }
+  body header .mySidepanel .avatar {
+    width: 32%;
+  }
+  body header .mySidepanel .avatar .dropdown-content {
+    right: 0px;
+  }
+  body header .mySidepanel .avatar:hover .dropdown-content {
+    width: 100%;
+  }
+  body header .openbtn {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    color: white;
+    padding: 10px 15px;
+    border: none;
   }
 }/*# sourceMappingURL=style.css.map */
