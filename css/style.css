@@ -236,7 +236,7 @@
 }
 * body section.playlistList .myPlaylist .mainCard a figure figcaption {
   position: absolute;
-  top: 67%;
+  top: 67vh;
   left: 2%;
 }
 * body section.playlistList .myPlaylist .card {
@@ -447,7 +447,7 @@
   right: 1%;
 }
 * body section.musicPlayer .player figure {
-  width: 77%;
+  width: 60%;
   margin-bottom: 9px;
 }
 * body section.musicPlayer .player figure img {
@@ -558,20 +558,36 @@
   body header nav ul li a {
     margin: 30px;
   }
+  body header .avatar:hover .dropdown-content {
+    width: 30%;
+    font-size: x-large;
+  }
   body section.home .playlistCards .playlistCard a figure {
     width: 100%;
   }
   body .card {
     width: 21%;
   }
+  body section.playlistList .title .nav {
+    width: 26%;
+  }
+  body section.playlistList .myPlaylist .mainCard {
+    width: 100%;
+  }
+  body section.playlistList .myPlaylist .mainCard a figure figcaption {
+    top: 51vh;
+    left: 5%;
+  }
+  body section.playlistList .myPlaylist .card {
+    width: 24%;
+  }
+  body section.musicPlayer {
+    width: 95%;
+  }
   body section.musicPlayer table {
     width: 100%;
   }
   body section.musicPlayer table tbody tr td {
     width: 17%;
-  }
-  body section.musicPlayer .player {
-    height: 79vh;
-    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
