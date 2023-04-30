@@ -17,6 +17,25 @@ function closeNav() {
 }
 
 
+// ********************************************* Like icons *****************************************************************//
+const likeIcon = document.querySelector(".like");
+
+let heartfull = false
+
+likeIcon.addEventListener("click", () => {
+
+  if (heartfull === false) {
+    likeIcon.innerHTML = `<i class="fa-solid fa-heart"></i>`;
+
+    heartfull = true;
+    
+  }else{
+    likeIcon.innerHTML = `<i class="fa-regular fa-heart"></i>`;
+
+    heartfull = false;
+  }
+})
+
 // ******************************************* audio player **************************************************************** * //
 
 const playBtn = document.querySelector("#mainPlayBtn");
