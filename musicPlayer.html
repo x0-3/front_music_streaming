@@ -84,14 +84,14 @@
 
             <div class="player">
 
-                <figure>
+                <figure class="cover">
                     <img src="img/1.png" alt="music cover">
                 </figure>
 
-                <h3>Title</h3>
-                <h4>Artist</h4>
+                <h3 class="trackTitle">Title</h3>
+                <h4 class="ArtistName">Artist</h4>
 
-
+                <!--
                 <audio id="myAudio" src="music/Aaliyah - Giving You More.mp3"></audio>
                 
                 
@@ -117,13 +117,55 @@
                         
                 </div>
                 
-                <!--TODO:Make it work in js-->
                 <div class="song-slider">
                     <span class="current-time">00:00</span>
                     <input type="range" value="0" class="seek-bar">
                     <span class="song-duration">00:00</span>
+                </div> -->
+
+                <div class="timeline">
+                    <small class="time">0:00</small>
+                    <small class="fulltime">2:55</small>
+                
+
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" value="0" class="slider">
+                    
+
+                        <div class="slider-thumb"></div>
+
+                        <div class="progress"></div>
+                    </div>
                 </div>
 
+                <div class="volume-slider">
+
+                    <div class="volume-icon">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+
+                    <div class="range-slider">
+
+                        <input type="range" min="0" max="100" value="50" class="slider">
+
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="control">
+
+                    <button class="fa-sharp fa-solid fa-backward" id="btnPrev"></button>    
+                    <button class="fa-solid fa-circle-play" id="mainPlayBtn"></button>
+                    <button class="fa-sharp fa-solid fa-forward" id="btnNext"></button>
+                </div>
+
+                <audio id="audio" hidden>
+                    <source src="music/Aaliyah - Giving You More.mp3"/>
+                </audio>
+                    
+
+
+                    
 
             </div>
 
