@@ -458,13 +458,14 @@
 * body section.musicPlayer .player figure img {
   width: 100%;
 }
-* body section.musicPlayer .player .song-slider {
+* body section.musicPlayer .player .timeline {
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-* body section.musicPlayer .player .song-slider .seek-bar {
+* body section.musicPlayer .player .timeline .slider {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -475,12 +476,15 @@
   overflow: hidden;
   cursor: pointer;
 }
-* body section.musicPlayer .player .song-slider .seek-bar::-webkit-slider-thumb {
+* body section.musicPlayer .player .timeline .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
           appearance: none;
   width: 1px;
   height: 20px;
   box-shadow: -400px 0 0 400px #36454f;
+}
+* body section.musicPlayer .player .timeline .range-slider {
+  width: 100%;
 }
 * body section.musicPlayer .player .controls {
   width: 24%;

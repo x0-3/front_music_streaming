@@ -17,85 +17,7 @@ function closeNav() {
 }
 
 
-// *********************************************************************************************************** * //
-// audio player
-
-// var myAudio = document.getElementById("myAudio");
-// var isPlaying = false;
-// let btnPrev = document.querySelector("#prev"); // Take the switch button of the previous track
-// let btnNext = document.querySelector("#next");
-
-// function togglePlay() {
-//   isPlaying ? myAudio.pause() : myAudio.play();
-// };
-
-// myAudio.onplaying = function() {
-//   isPlaying = true;
-// };
-// myAudio.onpause = function() {
-//   isPlaying = false;
-// };
-
-
-// // previous next
-
-// let playlist = [
-//   'Aaliyah - Giving You More.mp3',
-//   'Aaliyah - Giving You More.mp3',
-// ];
-
-// let track; // Variable with track index
-      
-// // Event before page loading
-// window. onload = function() {
-//   track = 0; // Assign zero to the variable
-// }
-
-// function switchtrack (numtrack) {
-//   // Change the src attribute value
-//   myAudio.src = './music/' + playlist[numtrack];
-//   // Assign a song time of zero
-//   myAudio. currentTime = 0;
-//   // Play the song
-//   myAudio.play();
-// }
-
-
-// // play previous song
-// btnPrev.addEventListener("click", function() {
-//   // Check that the track variable is greater than zero
-//   if (track > 0) {
-//     track--; // If true, reduce the variable by one
-//     switchtrack(track); // Change the song.
-//   } else { // Otherwise
-//     track = 3; // Assign three
-//     switchtrack(track); // Change the song
-//   }
-// });
-
-
-// // play next song
-// btnNext.addEventListener("click", function() {
-//   // Check that the track variable is greater than three
-//   if (track < 3) { // If so
-//     track++; // increase it by one
-//     switchtrack(track); // Change the song 
-//   } else { // Otherwise
-//     track = 0; // Assign a zero to it
-//     switchtrack(track); // Change the song
-//   }
-// });
-
-
-// // volume control
-// let volume = document.getElementById('volume-slider');
-// volume.addEventListener("change", function(e) {
-//     myAudio.volume = e.currentTarget.value / 100;
-// })
-
-
-
-// test
+// ******************************************* audio player **************************************************************** * //
 
 const playBtn = document.querySelector("#mainPlayBtn");
 const audio = document.querySelector("#audio");
@@ -120,11 +42,11 @@ let volumeMuted = false;
 
 let trackId = 0; 
 
+
 const tracks = [
   "Aaliyah - Giving You More.mp3",
   "Aaliyah - Giving You More.mp3"
-]
-
+];
 
 playBtn.addEventListener("click", playTrack);
 
@@ -250,6 +172,7 @@ audio.addEventListener("timeupdate", () => {
 });
 
 
+// music slider
 function customSlider(){
 
   const val = (slider.value / audio.duration) * 100 + "%";
@@ -266,4 +189,10 @@ customSlider();
 
 slider.addEventListener("input", customSlider);
 
-// 12:30
+
+// volume control
+let volume = document.getElementById('volume-slider');
+volume.addEventListener("change", function(e) {
+  audio.volume = e.currentTarget.value / 100;
+})
+
