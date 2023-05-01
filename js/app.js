@@ -61,12 +61,13 @@ let volumeMuted = false;
 
 let trackId = 0; 
 
-
+// TODO: make it dinamic with AJAX
 const tracks = [
   "Aaliyah - Giving You More.mp3",
   "Aaliyah - Giving You More.mp3"
 ];
 
+// play /pause 
 playBtn.addEventListener("click", playTrack);
 
 function playTrack(){
@@ -122,6 +123,7 @@ function loadTrack(){
 
 loadTrack();
 
+// play previous track
 btnPrev.addEventListener('click', () => {
 
   trackId--;
@@ -137,6 +139,8 @@ btnPrev.addEventListener('click', () => {
 
 });
 
+
+// switch to next song
 btnNext.addEventListener("click", nextTrack);
 
 function nextTrack(){
@@ -157,7 +161,7 @@ function nextTrack(){
 
 audio.addEventListener('ended', nextTrack);
 
-
+// music time 
 function setTime(output, input){
 
   const minutes = Math.floor(input / 60);
