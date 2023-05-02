@@ -93,6 +93,8 @@
 
                 
                 <div class="controls">
+                    
+                    <!-- TODO: change all like and add button to form -->
                     <button class="like"><i class="fa-regular fa-heart"></i></button>
 
                     <button class="fa-sharp fa-solid fa-backward" id="btnPrev"></button>    
@@ -101,7 +103,8 @@
                 
                     <div class="hover">
 
-                        <i class="fa-solid fa-volume-high"></i>
+                        <i class="volume-icon"><span class="fa-solid fa-volume-high"></span></i>
+
     
                         <div class="audio">
                             
@@ -111,8 +114,7 @@
                     </div>
                 </div>
 
-                <audio id="audio" hidden>
-                    <source src="music/Aaliyah - Giving You More.mp3"/>
+                <audio id="audio" src="assets/music/Aaliyah - Giving You More.mp3">
                 </audio>
 
                 <div class="timeline">
@@ -150,19 +152,25 @@
                     </thead>
     
                     <tbody>
-    
+                        
                         <tr>
+                            
                             <td>
                                 <figure>
-                                    <img src="img/2.png" alt="song img">
+                                    <a href="musicPlayer.html">
+
+                                        <img src="img/2.png" alt="song img">
+                                    </a>
                                 </figure>
                             </td>
-                            <td>song Title</td>
+                            <td><a href="musicPlayer.html">song Title</a></td>
                             <td> <a href="artistDetail.html"> Artist name </a></td>
                             <td><button><i class="fa-regular fa-heart"></i></button></td>
                             <td>3:09</td>
                             <td><button><i class="fa-solid fa-plus"></i></button></td>
+                        
                         </tr>
+                        
     
                         <tr>
                             <td>
